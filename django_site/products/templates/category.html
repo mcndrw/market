@@ -1,0 +1,10 @@
+<h2>{{category.title}}</h2>
+<p>{{category.description}}</p>
+{% for product in category.products.all %}
+<a href="/{{product.id}}">{{product.title}}<br></a>
+<img src="/pics/{{product.image}}" height="150px">
+<p>{{product.price}}</p>
+{% endfor %}
+<br>
+<br>
+<a href="http://127.0.0.1:8000/">main page<a>
