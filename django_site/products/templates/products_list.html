@@ -1,0 +1,8 @@
+{% load static %}
+{% for product in products %} 
+<h2><a href="/{{product.id}}">{{product.title}}</h2>
+<a href="/categorys/{{product.category.id}}">{{product.category.title}}<a>
+<br>
+<img src="/pics/{{product.image}}" height="200px">
+<p>{{product.price}}</p>
+{% endfor %} 
